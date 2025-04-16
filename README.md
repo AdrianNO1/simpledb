@@ -15,7 +15,7 @@ SimpleDB is a very basic file-based key-value store accessible over HTTP. It all
 
 1.  **Clone the repository (if applicable):**
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/AdrianNO1/simpledb
     cd simpledb
     ```
 2.  **Install dependencies:**
@@ -98,5 +98,5 @@ To get the value from the folder, add a `/` to the end of the path (`users/alice
 
 ## Configuration
 
-*   **Server Address:** The client library defaults to `http://192.168.1.168:6924`. You can change this using `simpledb.set_base_url("http://your_server_ip:6924")`.
+*   **Server Address:** The client library defaults to `http://127.0.0.1:6924`. You can change this using `simpledb.set_base_url("http://your_server_ip:6924")`.
 *   **User Mapping:** The server (`webserver.pyw`) contains an `IP_TO_NAME` dictionary to map request IP addresses to usernames for logging purposes.
