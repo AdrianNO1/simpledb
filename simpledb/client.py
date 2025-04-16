@@ -1,7 +1,7 @@
 import requests
 from requests.exceptions import HTTPError, ConnectionError
 
-BASE_URL = "http://192.168.1.168:6924"
+BASE_URL = "http://127.0.0.1:6924"
 
 def set_base_url(new_url):
     """Sets the base URL for the SimpleDB API client."""
