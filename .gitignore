@@ -5,3 +5,5 @@ requests.log
 .vscode/
 __pycache__/
 
+simpledb.egg-info/
+ipnamemap.json

@@ -26,6 +26,10 @@ IP_TO_NAME = {
     "10.0.0.42": "Person B",
 }
 
+if os.path.exists("ipnamemap.json"):
+    with open("ipnamemap.json", "r", encoding="utf-8") as f:
+        IP_TO_NAME = json.load(f)
+
 def log_request(method, path, user):
     timestamp = current_timestamp()
     log_entry = f"{timestamp} | {user} | {method} | {path}\n"
